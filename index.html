@@ -1,1 +1,70 @@
-<h1>Hello!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+        <nav>
+            <a href="#home" class="active" data-section="home">Home</a>
+            <a href="#about" data-section="about">About</a>
+            <a href="#contact" data-section="contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="content-section active">
+            <article class="blog-post">
+                <h2>First Blog Post</h2>
+                <div class="post-meta">Posted on January 17, 2025</div>
+                <p>This is my first blog post. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                   Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="read-more">Read More</button>
+            </article>
+
+            <article class="blog-post">
+                <h2>Second Blog Post</h2>
+                <div class="post-meta">Posted on January 16, 2025</div>
+                <p>Another interesting post. Ut enim ad minim veniam, quis nostrud exercitation 
+                   ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <button class="read-more">Read More</button>
+            </article>
+        </section>
+
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <p>Welcome to my blog! I'm a passionate writer sharing my thoughts and experiences.</p>
+            <p>This is where you can learn more about who I am and what I do.</p>
+        </section>
+
+        <section id="contact" class="content-section">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Simple Blog. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
